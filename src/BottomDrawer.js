@@ -50,11 +50,21 @@ export default class BottomDrawer extends Component{
      * Set to true to give the drawer a shadow.
      */
     shadow: PropTypes.bool,
+
+    /**
+     * Returns drawer open status flag.
+     */
+    getSwipeStatus: PropTypes.func,
+
+    /**
+     * Manually open and close drawer.
+     */
+    openDrawer: PropTypes.bool,
   }
 
   static defaultProps = {
     offset: 0,
-    startUp: true,
+    startUp: false,
     backgroundColor: '#ffffff',
     roundedEdges: true,
     shadow: true,
@@ -92,6 +102,14 @@ export default class BottomDrawer extends Component{
       onPanResponderMove: this._handlePanResponderMove,
       onPanResponderRelease: this._handlePanResponderRelease
     });
+  }
+
+  componentDidMount() {
+    if(this.props.startUp) {
+      if(!!this.props.getSwipeStatus) this.props.getSwipeStatus(true);
+    } else {
+      if(!!this.props.getSwipeStatus) this.props.getSwipeStatus(false);
+    }
   }
 
   componentWillReceiveProps(nextProps) {
