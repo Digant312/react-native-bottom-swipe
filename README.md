@@ -1,4 +1,4 @@
-# Bottom drawer for React Native
+# Bottom swipe drawer for React Native
 
 <!-- <p align="center">
   <img src="demo.gif" alt="Demo gif" width="300" />
@@ -13,10 +13,10 @@
 
 ## Installation
 
-Install `react-native-bottom-drawer`.
+Install `react-native-bottom-swipe`.
 
 ```
-npm install react-native-bottom-drawer --save
+npm install react-native-bottom-swipe --save
 ```
 
 ## Usage Example
@@ -25,7 +25,7 @@ npm install react-native-bottom-drawer --save
 ```javascript
 import React from 'react';
 import { View, Text } from 'react-native';
-import BottomDrawer from 'react-native-bottom-drawer';
+import BottomDrawer from 'react-native-bottom-swipe';
 
 const TAB_BAR_HEIGHT = 49;
 
