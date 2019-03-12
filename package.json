@@ -1,5 +1,5 @@
 {
-  "name": "react-native-bottom-drawer",
+  "name": "react-native-bottom-swipe",
   "version": "1.0.0",
   "description": "plug and play bottom drawer feature for react-native apps",
   "main": "index.js",
@@ -8,19 +8,19 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/Digant312/react-native-bottom-drawer.git"
+    "url": "git+https://github.com/Digant312/react-native-bottom-swipe.git"
   },
   "keywords": [
     "react-native",
     "drawer",
-    "swipe-component"
+    "swipe-drawer"
   ],
   "author": "Digant Patel",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/Digant312/react-native-bottom-drawer/issues"
+    "url": "https://github.com/Digant312/react-native-bottom-swipe/issues"
   },
-  "homepage": "https://github.com/Digant312/react-native-bottom-drawer#readme",
+  "homepage": "https://github.com/Digant312/react-native-bottom-swipe#readme",
   "dependencies": {
     "prop-types": "^15.6.2"
   },
